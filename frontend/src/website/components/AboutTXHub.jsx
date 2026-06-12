@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2, Target, Users, BookOpen } from 'lucide-react';
+import aboutImg from '../assets/About.png.png';
 
 const AboutTXHub = () => {
   const features = [
@@ -43,7 +44,7 @@ const AboutTXHub = () => {
                 About TXHub
               </span>
               <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-                Empowering the next generation of <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">tech leaders</span>.
+                Empowering the next generation of <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-500">tech leaders</span>
               </h2>
               <p className="mt-6 text-lg text-slate-600 leading-relaxed">
                 TXHub is an elite learning platform designed to transform ambitious learners into highly sought-after professionals. We combine cutting-edge curriculum with immersive, hands-on training to ensure you are ready for the modern workplace from day one.
@@ -82,14 +83,14 @@ const AboutTXHub = () => {
           >
             <div className="aspect-square md:aspect-[4/3] lg:aspect-square rounded-[2rem] overflow-hidden shadow-2xl shadow-indigo-200 relative">
               <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src={aboutImg} 
                 alt="Students collaborating" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent" />
               
               {/* Overlay Stats Card */}
-              <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white">
+              {/* <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-white">
                 <div className="grid grid-cols-3 gap-4 text-center divide-x divide-white/20">
                   <div>
                     <div className="text-3xl font-black">10k+</div>
@@ -104,7 +105,7 @@ const AboutTXHub = () => {
                     <div className="text-xs font-medium text-slate-300 mt-1 uppercase tracking-wider">Placement</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             
             {/* Floating element */}

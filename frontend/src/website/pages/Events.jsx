@@ -12,6 +12,7 @@ import {
   Star,
   MonitorPlay
 } from "lucide-react";
+import eventsBg from "../assets/Events.png.png";
 
 const upcomingEvents = [
   {
@@ -82,7 +83,7 @@ const EventsPage = () => {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+            src={eventsBg} 
             alt="Tech Event Hackathon" 
             className="w-full h-full object-cover opacity-50"
           />

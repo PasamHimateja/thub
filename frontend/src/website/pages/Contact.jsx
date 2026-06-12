@@ -17,6 +17,7 @@ import {
   User,
   BookOpen,
 } from "lucide-react";
+import contactBg from "../assets/Contact.png.png";
 
 const contactInfo = [
   {
@@ -140,7 +141,7 @@ const handleSubmit = async (e) => {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+            src={contactBg} 
             alt="Contact Us Background" 
             className="w-full h-full object-cover opacity-50"
           />

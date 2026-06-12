@@ -19,6 +19,7 @@ import mernImg from "../assets/mern stack development.jpg";
 import mlImg from "../assets/ml.jpg";
 import awsImg from "../assets/aws.jpg";
 import dsImg from "../assets/dataScience.jpg";
+import blogBg from "../assets/Blog.png.png";
 
 const blogPosts = [
   {
@@ -155,7 +156,7 @@ const BlogPage = () => {
         {/* Background Image & Overlay */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
+            src={blogBg} 
             alt="Blog Background" 
             className="w-full h-full object-cover opacity-50"
           />
